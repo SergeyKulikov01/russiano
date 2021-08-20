@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
+@import url('https://fonts.googleapis.com/css?family=Oswald&subset=cyrillic');
+body {
+  font-family: "oswald", sans-serif;
+}
+
+.button-parent {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.button-parent--inner {
+  padding: 4em 1em;
+}
+
+a.btn-2 {
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.button-item {
+  padding-bottom: 2em;
+}
+
+.btn-1 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-1:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: #4A90E2;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transition: all 0ms ease;
+}
+.btn-1:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-1:hover:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #4A90E2;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+
+.btn-2 {
+  padding: 0.6em 0.6em;
+  border: 4px solid #FFFFFF;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-2:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: #FFFFFF;
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-2:hover {
+  color: #212121;
+  box-shadow: none;
+}
+.btn-2:hover:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.btn-3 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-3 span {
+  position: relative;
+  padding: 0em 0.2em;
+}
+.btn-3 span:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  height: 50%;
+  width: 0%;
+  background: #4A90E2;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-3:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-3:hover span:before {
+  content: '';
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.btn-4 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-4 span {
+  position: relative;
+  padding: 0em 0.2em;
+}
+.btn-4 span:before {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  top: 0;
+  height: 0%;
+  width: 100%;
+  background: #4A90E2;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-4:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-4:hover span:before {
+  content: '';
+  height: 100%;
+  bottom: 0;
+  top: auto;
+}
+
+.btn-5 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-5:before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+}
+.btn-5:after {
+  content: '';
+  width: 80%;
+  height: 0px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+  z-index: -1;
+}
+.btn-5:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-5:hover:before {
+  content: '';
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 300ms ease;
+}
+.btn-5:hover:after {
+  content: '';
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: all 300ms ease;
+  transition-delay: 350ms;
+}
+
+.btn-6 {
+  padding: 0.7em 1em;
+  border: 3px solid #FFF;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-6:before {
+  content: '';
+  height: 0%;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #FFF;
+  transition: all 0ms ease;
+}
+.btn-6:after {
+  content: '';
+  height: 80%;
+  width: 0px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #FFF;
+  transition: all 0ms ease;
+  z-index: -1;
+}
+.btn-6:hover {
+  color: #212121;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  content: '';
+  height: 80%;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #FFF;
+  transition: all 300ms ease;
+}
+.btn-6:hover:after {
+  content: '';
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: all 300ms ease;
+  transition-delay: 350ms;
+}
+a.btn-6 {
+  
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 1.5vw;
+}
+
+
+
+
+.container {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 80px;
+}
+
+ul.submenu {
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #ccc;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 200%;
+  width: 200%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-twitter::after {
+  height: 200%;
+  width: 200%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-google-plus::after {
+  height: 200%;
+  width: 200%;
+  background-color: #d34836;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 200%;
+  width: 200%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+i.fa-youtube {
+  font-size: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e62117;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
